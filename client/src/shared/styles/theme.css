@@ -65,8 +65,8 @@
   /* Data */
   --tc-color-data-secondary: var(--tc-plum-500);
 }
-
 @theme inline {
+  /* Colors */
   --color-canvas: var(--tc-color-bg-canvas);
   --color-surface: var(--tc-color-bg-surface);
   --color-elevated: var(--tc-color-bg-elevated);
@@ -85,10 +85,23 @@
 
   --color-data-secondary: var(--tc-color-data-secondary);
 
-
-    /* Fonts */
+  /* Fonts */
   --font-display: var(--tc-font-display);
   --font-body: var(--tc-font-body);
+
+  /* Spacing */
+  --spacing-tc-2: var(--tc-space-2);
+  --spacing-tc-4: var(--tc-space-4);
+  --spacing-tc-8: var(--tc-space-8);
+  --spacing-tc-12: var(--tc-space-12);
+  --spacing-tc-16: var(--tc-space-16);
+  --spacing-tc-20: var(--tc-space-20);
+  --spacing-tc-24: var(--tc-space-24);
+  --spacing-tc-32: var(--tc-space-32);
+  --spacing-tc-40: var(--tc-space-40);
+  --spacing-tc-48: var(--tc-space-48);
+  --spacing-tc-64: var(--tc-space-64);
+  --spacing-tc-80: var(--tc-space-80);
 
   /* Radius */
   --radius-xs: var(--tc-radius-xs);
@@ -96,7 +109,6 @@
   --radius-md: var(--tc-radius-md);
   --radius-full: var(--tc-radius-full);
 }
-
 /* ========================================
    SPACING
    Mirrors Figma: TC / Spacing
