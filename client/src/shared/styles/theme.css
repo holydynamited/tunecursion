@@ -1,0 +1,165 @@
+@import "tailwindcss"; 
+
+
+/* ========================================
+   PRIMITIVES
+   Raw values from Figma: TC / Primitives
+   ======================================== */
+
+:root {
+  /* Ink */
+  --tc-ink-950: #0b0d0d;
+  --tc-ink-900: #111414;
+  --tc-ink-850: #171a1a;
+  --tc-ink-800: #1f2323;
+  --tc-ink-700: #2b3030;
+
+  /* Gray */
+  --tc-gray-500: #858b8b;
+  --tc-gray-300: #b7bcbc;
+
+  /* White */
+  --tc-white-1000: #f4f3ef;
+
+  /* Coral */
+  --tc-coral-700: #ff7580;
+  --tc-coral-500: #ff5d67;
+  --tc-coral-400: #ff747c;
+
+  /* Plum */
+  --tc-plum-500: #74445c;
+
+  /*Artwork*/
+  --tc-rust:#9E2926;
+  --tc-concrete:#8F806B;
+
+}
+
+
+/* ========================================
+   SEMANTIC COLORS
+   Mirrors Figma: TC / Color
+   ======================================== */
+
+:root {
+  /* Background */
+  --tc-color-bg-canvas: var(--tc-ink-950);
+  --tc-color-bg-surface: var(--tc-ink-900);
+  --tc-color-bg-elevated: var(--tc-ink-850);
+  --tc-color-bg-muted: var(--tc-ink-800);
+
+  /* Text */
+  --tc-color-text-primary: var(--tc-white-1000);
+  --tc-color-text-secondary: var(--tc-gray-300);
+  --tc-color-text-muted: var(--tc-gray-500);
+
+  /* Accent */
+  --tc-color-accent-default: var(--tc-coral-500);
+  --tc-color-accent-hover: var(--tc-coral-400);
+  --tc-color-accent-dim: var(--tc-coral-700);
+
+  /* Border */
+  --tc-color-border-default: var(--tc-ink-700);
+  --tc-color-border-strong: var(--tc-gray-500);
+
+  /* Data */
+  --tc-color-data-secondary: var(--tc-plum-500);
+}
+
+@theme inline {
+  --color-canvas: var(--tc-color-bg-canvas);
+  --color-surface: var(--tc-color-bg-surface);
+  --color-elevated: var(--tc-color-bg-elevated);
+  --color-muted: var(--tc-color-bg-muted);
+
+  --color-text-primary: var(--tc-color-text-primary);
+  --color-text-secondary: var(--tc-color-text-secondary);
+  --color-text-muted: var(--tc-color-text-muted);
+
+  --color-accent: var(--tc-color-accent-default);
+  --color-accent-hover: var(--tc-color-accent-hover);
+  --color-accent-dim: var(--tc-color-accent-dim);
+
+  --color-border: var(--tc-color-border-default);
+  --color-border-strong: var(--tc-color-border-strong);
+
+  --color-data-secondary: var(--tc-color-data-secondary);
+
+
+    /* Fonts */
+  --font-display: var(--tc-font-display);
+  --font-body: var(--tc-font-body);
+
+  /* Radius */
+  --radius-xs: var(--tc-radius-xs);
+  --radius-sm: var(--tc-radius-sm);
+  --radius-md: var(--tc-radius-md);
+  --radius-full: var(--tc-radius-full);
+}
+
+/* ========================================
+   SPACING
+   Mirrors Figma: TC / Spacing
+   ======================================== */
+
+:root {
+  --tc-space-2: 2px;
+  --tc-space-4: 4px;
+  --tc-space-8: 8px;
+  --tc-space-12: 12px;
+  --tc-space-16: 16px;
+  --tc-space-20: 20px;
+  --tc-space-24: 24px;
+  --tc-space-32: 32px;
+  --tc-space-40: 40px;
+  --tc-space-48: 48px;
+  --tc-space-64: 64px;
+  --tc-space-80: 80px;
+}
+
+
+/* ========================================
+   RADIUS
+   Mirrors Figma: TC / Radius
+   ======================================== */
+
+:root {
+  --tc-radius-none: 0px;
+  --tc-radius-xs: 2px;
+  --tc-radius-sm: 4px;
+  --tc-radius-md: 8px;
+  --tc-radius-full: 999px;
+}
+
+
+/* ========================================
+   TYPOGRAPHY
+   Mirrors Figma: TC / Typography
+   ======================================== */
+
+:root {
+  /* Families */
+  --tc-font-display: "Space Grotesk", sans-serif;
+  --tc-font-body: "Inter", sans-serif;
+
+  /* Sizes */
+  --tc-font-size-12: 12px;
+  --tc-font-size-14: 14px;
+  --tc-font-size-16: 16px;
+  --tc-font-size-18: 18px;
+  --tc-font-size-20: 20px;
+  --tc-font-size-24: 24px;
+  --tc-font-size-32: 32px;
+  --tc-font-size-48: 48px;
+  --tc-font-size-56: 56px;
+
+  /* Line heights */
+  --tc-line-16: 16px;
+  --tc-line-20: 20px;
+  --tc-line-24: 24px;
+  --tc-line-28: 28px;
+  --tc-line-32: 32px;
+  --tc-line-40: 40px;
+  --tc-line-52: 52px;
+  --tc-line-60: 60px;
+}
