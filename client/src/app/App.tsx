@@ -27,6 +27,18 @@ function App() {
     <Tag variant='visual'>
       atmospheric
     </Tag>
+
+      <Tag variant='button'>
+      atmospheric
+    </Tag>
+
+    <Tag variant='button' selected>
+      atmospheric
+    </Tag>
+
+     <Tag variant='button' disabled>
+      atmospheric
+    </Tag>
     </div>
     
    </div>

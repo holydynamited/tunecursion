@@ -12,8 +12,8 @@ type ButtonTagProps = {
 }
 
 type Props = VisualTagProps | ButtonTagProps
- const disabledStyles ='bg-surface text-text-muted' 
- const selectedStyles='bg-accent text-canvas'
+ const disabledStyles ='bg-surface text-text-muted outline-none' 
+ const selectedStyles='bg-accent text-canvas outline-none'
 
 export default function Tag(props:Props){
        const { variant, children } = props
@@ -38,25 +38,15 @@ export default function Tag(props:Props){
     inline-flex items-center
     px-tc-12 py-tc-8 
     rounded-sm font-body 
-    text-size-14 
-
-      ${disabled
-        ? disabledStyles
-        : selected
-            ? selectedStyles
-            :" hover:bg-elevated hover:text-text-primary"
-        }
+    text-size-14
     
-    focus-visible:border-2
-    focus-visible:border-accent
-
         ${disabled
         ? disabledStyles
         : selected
             ? selectedStyles
-            : "bg-muted text-text-secondary"
+            : " bg-muted hover:bg-elevated hover:text-text-primary  text-text-secondary focus-visible:bg-canvas focus-visible:outline-2 focus-visible:outline-accent-hover"
         }
-        ${disabled ? "cursor-not-allowed" : "cursor-pointer"}
+        ${disabled ? "cursor-not-allowed" : "cursor-pointer"}   
 
     `}>
         <span>
