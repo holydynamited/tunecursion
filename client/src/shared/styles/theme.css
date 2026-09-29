@@ -108,6 +108,17 @@
   --radius-sm: var(--tc-radius-sm);
   --radius-md: var(--tc-radius-md);
   --radius-full: var(--tc-radius-full);
+
+  /* Font sizes */
+--text-tc-12: var(--tc-font-size-12);
+--text-tc-14: var(--tc-font-size-14);
+--text-tc-16: var(--tc-font-size-16);
+--text-tc-18: var(--tc-font-size-18);
+--text-tc-20: var(--tc-font-size-20);
+--text-tc-24: var(--tc-font-size-24);
+--text-tc-32: var(--tc-font-size-32);
+--text-tc-48: var(--tc-font-size-48);
+--text-tc-56: var(--tc-font-size-56);
 }
 /* ========================================
    SPACING

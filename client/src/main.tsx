@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './shared/styles/index.css'
 import App from './app/App.tsx'
 
+import "@fontsource/inter"
+import "@fontsource/space-grotesk"
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
