@@ -18,8 +18,8 @@ type Props = {
 
 
 const ButtonVariant:Record<ButtonStyle, string> = {
-    primary:"bg-accent text-canvas hover:bg-accent-hover active:bg-accent-dim focus-visible:outline-2 focus-visible:outline-text-primary ",
-    secondary:"bg-canvas  text-accent hover:bg-muted active:bg-muted-dim focus-visible:outline-2 focus-visible:outline-accent-hover  "
+    primary:"bg-accent text-canvas hover:bg-accent-hover active:bg-accent-dim focus-visible:outline-2 focus-visible:outline-text-primary",
+    secondary:"bg-canvas text-accent hover:bg-muted active:bg-muted-dim focus-visible:outline-2 focus-visible:outline-accent-hover"
 }
 
 const ButtonColorsDisabledVariant:Record<ButtonStyle,string> = {

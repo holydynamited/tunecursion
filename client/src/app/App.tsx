@@ -1,5 +1,5 @@
 import Button from "../shared/ui/Button/Button"
-
+import Tag from "../shared/ui/Tag/Tag"
 
 
 function App() {
@@ -23,6 +23,10 @@ function App() {
     <Button variant="secondary" disabled={true}>
       View all
     </Button>
+
+    <Tag variant='visual'>
+      atmospheric
+    </Tag>
     </div>
     
    </div>
