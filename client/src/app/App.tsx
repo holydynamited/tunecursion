@@ -2,6 +2,12 @@ import Button from "../shared/ui/Button/Button"
 import Tag from "../shared/ui/Tag/Tag"
 import SectionHeader from "../shared/ui/SectionHeader/SectionHeader"
 import DimensionRow from "../shared/ui/DimensionRow/DimensionRow"
+import TrackRow from "../shared/ui/TrackRow/TrackRow"
+import DiscussionRow from "../shared/ui/DiscussionRow/DiscussionRow"
+import ReleaseRow from "../shared/ui/ReleaseRow/ReleaseRow"
+
+
+import wlr from '../assets/wlr.jpg'
 
 
 function App() {
@@ -49,6 +55,12 @@ function App() {
       />
 
       <DimensionRow rightLabel="Geeky" leftLabel="Flexx" value={90}/>
+
+      <TrackRow number={4} title="Over" duration="3:20" rating={5}/>
+
+      <DiscussionRow theme="hiiii" replies={20} author="bby" createdAt="2 hours ago"/>
+
+      <ReleaseRow type="album" name="Whole lotta red" trackCount={6} releaseYear={2020} rating={4.4} imageStr={wlr}/>
 
 
     </div>

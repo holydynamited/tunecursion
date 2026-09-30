@@ -5,7 +5,7 @@ type Props ={
     action?:React.ReactNode;
 
 }
-
+ 
 export default function SectionHeader({title,description,action}:Props){
 
     return (
