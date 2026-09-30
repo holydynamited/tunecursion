@@ -5,6 +5,7 @@ import DimensionRow from "../shared/ui/DimensionRow/DimensionRow"
 import TrackRow from "../shared/ui/TrackRow/TrackRow"
 import DiscussionRow from "../shared/ui/DiscussionRow/DiscussionRow"
 import ReleaseRow from "../shared/ui/ReleaseRow/ReleaseRow"
+import ProfileTab from "../shared/ui/ProfileTab/ProfileTab"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -61,6 +62,12 @@ function App() {
       <DiscussionRow theme="hiiii" replies={20} author="bby" createdAt="2 hours ago"/>
 
       <ReleaseRow type="album" name="Whole lotta red" trackCount={6} releaseYear={2020} rating={4.4} imageStr={wlr}/>
+
+      <div className="flex w-full gap-5">
+      <ProfileTab text="Overview"/>
+      <ProfileTab text="Overview" active/>
+      <ProfileTab text="Overview" disabled/>
+      </div>
 
 
     </div>
