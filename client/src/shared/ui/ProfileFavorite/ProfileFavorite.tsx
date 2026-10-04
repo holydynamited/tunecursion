@@ -39,8 +39,9 @@ export default function ProfileFavorite(props: Props) {
       >
         <img
           src={photoSrc}
+          draggable = {false}
           alt="Favorite photo"
-          className="h-[72px] w-[72px] shrink-0 rounded-tc-4 object-cover"
+          className="h-[72px] w-[72px] shrink-0 rounded-tc-4 select-none object-cover "
         />
 
         <div className="flex min-w-0 flex-1 flex-col items-start gap-[2px] overflow-hidden">
@@ -90,8 +91,9 @@ export default function ProfileFavorite(props: Props) {
       >
         <img
           src={photoSrc}
+          draggable = {false}
           alt="Favorite photo"
-          className="h-[72px] w-[72px] shrink-0 rounded-tc-4 object-cover"
+          className="h-[72px] w-[72px] shrink-0 rounded-tc-4 select-none object-cover "
         />
 
         <div className="flex min-w-0 flex-1 flex-col items-start gap-[2px] overflow-hidden">

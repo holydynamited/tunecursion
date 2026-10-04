@@ -43,7 +43,7 @@ if (type === 'artist') {
     focus-visible:outline-accent
   ">
       <div className="h-[236px] w-[236px] bg-bg-muted relative " >
-        <img className="cover" src={photoSrc} alt="" />
+        <img draggable={false} className="pointer-events-none select-none object-cover" src={photoSrc} alt="" />
       </div>
 
        <div className="font-display text-tc-20 font-medium leading-tc-28 text-text-primary">
@@ -79,7 +79,7 @@ return(
     focus-visible:outline-accent
   ">
       <div className="h-[236px] w-[236px] bg-bg-muted relative mx-auto" >
-        <img className="cover" src={photoSrc} alt="" />
+        <img draggable={false} className="pointer-events-none select-none object-cover" src={photoSrc} />
       </div>
 
        <div className="font-display text-tc-20 font-medium leading-tc-28 text-text-primary">

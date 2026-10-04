@@ -8,10 +8,16 @@ import ReleaseRow from "../shared/ui/ReleaseRow/ReleaseRow"
 import ProfileTab from "../shared/ui/ProfileTab/ProfileTab"
 import MediaCard from "../shared/ui/MediaCard/MediaCard"
 import ReviewRow from "../shared/ui/ReviewRow/ReviewRow"
+import ProfileReview from "../shared/ui/ProfileReview/ProfileReview"
+import CollectionMeta from "../shared/ui/СollectionMeta/CollectionMeta"
+import RatingDistributionRow from "../shared/ui/RatingDistribution/RatingDistributionRow"
+import RatingDistribution from "../shared/ui/RatingDistribution/RatingDistribution"
 
 
 import wlr from '../assets/wlr.jpg'
 import ProfileFavorite from "../shared/ui/ProfileFavorite/ProfileFavorite"
+
+import { mockRatings } from "../shared/lib/mockRatings"
 
 
 function App() {
@@ -84,11 +90,45 @@ function App() {
 
       <ReviewRow username="bbyboi" comment="Firee album" rate={4} findHelpful={5} date="5 min ago" />
 
+      <ProfileReview type="artist" artistName="Playboi Carti" reviewText="Skibidi skibidi blahblahblha" photoSrc={wlr} mediaName="" rating={4.3} helpfulCount={340} createdAt="2 weeks ago"/>
+      <ProfileReview type="artist" artistName="Playboi Carti" reviewText="Skibidi skibidi blahblahblha" photoSrc={wlr} mediaName="" rating={4.3} helpfulCount={340} createdAt="2 weeks ago"/>
+      
+      
+      <CollectionMeta type="artists" name="best" innerCount={21}/>
+      <CollectionMeta type="releases" name="best releases" innerCount={21}/>
+      <CollectionMeta type="tracks" name="best " innerCount={231}/>
+
+      <RatingDistributionRow label={5} value={52} />
+      <RatingDistributionRow label={4} value={28} />
+      <RatingDistributionRow label={3} value={12} />
+      <RatingDistributionRow label={2} value={6} />
+      <RatingDistributionRow label={1} value={2} /> 
+
+      <div className="flex flex-wrap gap-tc-24">
+  <RatingDistribution
+    size="sm"
+    text="Community scores lean strongly positive, with a visible cult following."
+    ratings={mockRatings}
+  />
+
+  <RatingDistribution
+    size="st"
+    text="Community scores lean strongly positive, with a visible cult following."
+    ratings={mockRatings}
+  />
+
+  <RatingDistribution
+    size="wide"
+    text="Community scores lean strongly positive, with a visible cult following."
+    ratings={mockRatings}
+  />
+</div>
+
 
 
     </div>
     
-   </div>
+   </div> 
     
    
   )

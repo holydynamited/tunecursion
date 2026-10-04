@@ -38,7 +38,7 @@ export default function ReleaseRow({type, name, trackCount, releaseYear, rating,
   ">
 
     <div className="h-[72px] w-[72px] bg-muted" >
-        <img className='w-full h-full cover' src={imageStr} alt="" />
+        <img className='w-full h-full cover pointer-events-none select-none object-cover' src={imageStr} draggable={false}alt="" />
     </div>
 
 
