@@ -6,6 +6,7 @@ import TrackRow from "../shared/ui/TrackRow/TrackRow"
 import DiscussionRow from "../shared/ui/DiscussionRow/DiscussionRow"
 import ReleaseRow from "../shared/ui/ReleaseRow/ReleaseRow"
 import ProfileTab from "../shared/ui/ProfileTab/ProfileTab"
+import MediaCard from "../shared/ui/MediaCard/MediaCard"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -73,6 +74,12 @@ function App() {
       <ProfileFavorite type='album' photoSrc={wlr} name="Whole Lotta Red" rating={4.3} year="2020"  />
       <ProfileFavorite type='track' photoSrc={wlr} name="Vamp Anthem" rating={4.3} year="2020"   />
       <ProfileFavorite type='artist' photoSrc={wlr} name="Playboi Carti" rating={4.3}   />
+
+
+      <div className="flex  justify-center mt-8" >
+        <MediaCard type="artist" name='Playboi Carti' photoSrc={wlr} rating={4.9} ratingCount={6999} />
+         <MediaCard type="track" name='Over' photoSrc={wlr} rating={4.9} ratingCount={6999} artistName="Playboi Carti" />
+      </div>
 
 
     </div>
