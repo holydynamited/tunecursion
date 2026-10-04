@@ -7,6 +7,7 @@ import DiscussionRow from "../shared/ui/DiscussionRow/DiscussionRow"
 import ReleaseRow from "../shared/ui/ReleaseRow/ReleaseRow"
 import ProfileTab from "../shared/ui/ProfileTab/ProfileTab"
 import MediaCard from "../shared/ui/MediaCard/MediaCard"
+import ReviewRow from "../shared/ui/ReviewRow/ReviewRow"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -80,6 +81,9 @@ function App() {
         <MediaCard type="artist" name='Playboi Carti' photoSrc={wlr} rating={4.9} ratingCount={6999} />
          <MediaCard type="track" name='Over' photoSrc={wlr} rating={4.9} ratingCount={6999} artistName="Playboi Carti" />
       </div>
+
+      <ReviewRow username="bbyboi" comment="Firee album" rate={4} findHelpful={5} date="5 min ago" />
+
 
 
     </div>
