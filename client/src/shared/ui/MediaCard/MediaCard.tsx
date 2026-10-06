@@ -25,7 +25,7 @@ if (type === 'artist') {
     focus-visible:outline-2
     focus-visible:outline-accent
   ">
-      <div className="h-[236px] w-[236px] bg-bg-muted relative " >
+      <div className="h-[236px] w-[236px] bg-muted relative " >
         <img draggable={false} className="pointer-events-none select-none object-cover" src={photoSrc} alt="" />
       </div>
 

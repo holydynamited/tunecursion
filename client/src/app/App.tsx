@@ -9,9 +9,10 @@ import ProfileTab from "../shared/ui/ProfileTab/ProfileTab"
 import MediaCard from "../shared/ui/MediaCard/MediaCard"
 import ReviewRow from "../shared/ui/ReviewRow/ReviewRow"
 import ProfileReview from "../shared/ui/ProfileReview/ProfileReview"
-import CollectionMeta from "../shared/ui/СollectionMeta/CollectionMeta"
+import CollectionMeta from "../shared/ui/CollectionMeta/CollectionMeta"
 import RatingDistributionRow from "../shared/ui/RatingDistribution/RatingDistributionRow"
 import RatingDistribution from "../shared/ui/RatingDistribution/RatingDistribution"
+import CommunityRating from "../shared/ui/CommunityRating/CommunityRating"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -123,6 +124,12 @@ function App() {
     ratings={mockRatings}
   />
 </div>
+
+    <div className="flex gap-8 mt-10"> 
+      <CommunityRating type="community" ratingCount={1450} ratings={mockRatings} averageRating={4.2}/>
+      <CommunityRating type="default" ratingCount={1450} ratings={mockRatings} averageRating={4.2}/>
+    </div>
+
 
 
 

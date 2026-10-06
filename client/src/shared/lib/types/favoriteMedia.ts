@@ -1,7 +1,7 @@
-type FavoriteMediaType = 'album' | 'track'
+import type { FavoriteMedia } from "../../lib/types/media"
 
  type AlbumTrackProps = {
-  type: FavoriteMediaType
+  type: FavoriteMedia
   name: string
   photoSrc: string
   year: string
@@ -14,4 +14,4 @@ type FavoriteMediaType = 'album' | 'track'
   rating: number
 }
 
-export type FavoriteMedia = ArtistProps | AlbumTrackProps
+export type FavoriteMediaProps = ArtistProps | AlbumTrackProps

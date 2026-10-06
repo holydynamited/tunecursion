@@ -1,6 +1,6 @@
-import { type FavoriteMedia } from "../../lib/types/favoriteMedia"
+import { type FavoriteMediaProps } from "../../lib/types/favoriteMedia"
 
-type Props = FavoriteMedia
+type Props = FavoriteMediaProps
 
 export default function ProfileFavorite(props: Props) {
   const { type, name, photoSrc, rating } = props
@@ -13,10 +13,10 @@ export default function ProfileFavorite(props: Props) {
           w-full
           items-center
           gap-tc-16
-          rounded-tc-4
+          rounded-sm
           border
-          border-border-default
-          bg-bg-elevated
+          border-border
+          bg-elevated
           py-tc-12
           pl-tc-12
           pr-tc-16
@@ -65,10 +65,10 @@ export default function ProfileFavorite(props: Props) {
           w-full
           items-center
           gap-tc-16
-          rounded-tc-4
+          rounded-sm
           border
-          border-border-default
-          bg-bg-elevated
+          border-border
+          bg-elevated
           py-tc-12
           pl-tc-12
           pr-tc-16
@@ -78,7 +78,7 @@ export default function ProfileFavorite(props: Props) {
           src={photoSrc}
           draggable = {false}
           alt="Favorite photo"
-          className="h-[72px] w-[72px] shrink-0 rounded-tc-4 select-none object-cover "
+          className="h-[72px] w-[72px] shrink-0 rounded-sm select-none object-cover "
         />
 
         <div className="flex min-w-0 flex-1 flex-col items-start gap-[2px] overflow-hidden">
