@@ -1,5 +1,5 @@
 
-type ReleaseType = | "album"| "ep"| "mixtape"| "single" | "compilation"| "live"
+import { type ReleaseType } from "../../lib/types/release"
 
 type Props ={
  

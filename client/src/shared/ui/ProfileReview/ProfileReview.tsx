@@ -1,5 +1,4 @@
-
-type MediaType = 'album'|'track'|'artist'
+import type { MediaType } from "../../lib/types/media"
 
 
 type Props = {

@@ -17,7 +17,7 @@ import RatingDistribution from "../shared/ui/RatingDistribution/RatingDistributi
 import wlr from '../assets/wlr.jpg'
 import ProfileFavorite from "../shared/ui/ProfileFavorite/ProfileFavorite"
 
-import { mockRatings } from "../shared/lib/mockRatings"
+import { mockRatings } from "../shared/lib/mocks/mockRatings"
 
 
 function App() {

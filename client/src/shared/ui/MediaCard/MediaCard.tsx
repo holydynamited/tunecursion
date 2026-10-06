@@ -1,25 +1,8 @@
 
-type FavoriteMedia = 'album' | 'track'
+import {type Media } from "../../lib/types/media"
 
-type AlbumTrackProps = {
-  type: FavoriteMedia
-  name: string
-  artistName:string
-  photoSrc: string
-  
-  rating: number
-  ratingCount:number
-}
+type Props = Media
 
-type ArtistProps = {
-  type: 'artist'
-  name: string
-  photoSrc: string
-  rating: number
-  ratingCount:number
-}
-
-type Props = ArtistProps | AlbumTrackProps
 
 export default function MediaCard(props:Props) {
     const { type, name, photoSrc, rating, ratingCount } = props

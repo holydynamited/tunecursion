@@ -1,21 +1,6 @@
-type FavoriteMedia = 'album' | 'track'
+import { type FavoriteMedia } from "../../lib/types/favoriteMedia"
 
-type AlbumTrackProps = {
-  type: FavoriteMedia
-  name: string
-  photoSrc: string
-  year: string
-  rating: number
-}
-
-type ArtistProps = {
-  type: 'artist'
-  name: string
-  photoSrc: string
-  rating: number
-}
-
-type Props = ArtistProps | AlbumTrackProps
+type Props = FavoriteMedia
 
 export default function ProfileFavorite(props: Props) {
   const { type, name, photoSrc, rating } = props

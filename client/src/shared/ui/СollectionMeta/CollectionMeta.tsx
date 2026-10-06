@@ -1,4 +1,4 @@
-type CollectionType = 'tracks' | 'releases' | 'artists'
+import { type CollectionType } from "../../lib/types/collection"
 
 type Props = {
 type:CollectionType

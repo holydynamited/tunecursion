@@ -1,11 +1,10 @@
 import RatingDistributionRow from "./RatingDistributionRow"
 
+import { type RatingItem } from "../../lib/types/rating"
+
 type sizes = 'sm'|'st'|'wide'
 // type densities = 'def'|'wide'
-type RatingItem = {
-  label: number
-  value: number
-}
+
 
 type Props = {
     size?:sizes
