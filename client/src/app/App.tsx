@@ -14,6 +14,7 @@ import RatingDistributionRow from "../shared/ui/RatingDistribution/RatingDistrib
 import RatingDistribution from "../shared/ui/RatingDistribution/RatingDistribution"
 import CommunityRating from "../shared/ui/CommunityRating/CommunityRating"
 import Header from "../shared/ui/Header/Header"
+import RankedMediaRow from "../shared/ui/RankedMediaRow/RankedMediaRow"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -133,6 +134,58 @@ function App() {
 
 
       <Header/>
+
+
+      <div className="flex flex-col">
+  <RankedMediaRow
+    type="artist"
+    rank={1}
+    imageSrc={wlr}
+    score={6.9}
+    change={12}
+    artistName="Playboi Carti"
+  />
+
+  <RankedMediaRow
+    type="track"
+    rank={2}
+    imageSrc={wlr}
+    title="Sky"
+    artistName="Playboi Carti"
+    score={8.7}
+    change={7}
+  />
+
+  <RankedMediaRow
+    type="album"
+    rank={3}
+    imageSrc={wlr}
+    title="Whole Lotta Red"
+    artistName="Playboi Carti"
+    score={8.4}
+    change={11}
+  />
+
+  <RankedMediaRow
+    type="track"
+    rank={4}
+    imageSrc={wlr}
+    title="Stop Breathing"
+    artistName="Playboi Carti"
+    score={8.2}
+    change={-3}
+  />
+
+  <RankedMediaRow
+    type="album"
+    rank={5}
+    imageSrc={wlr}
+    title="Die Lit"
+    artistName="Playboi Carti"
+    score={8.1}
+    change={4}
+  />
+</div>
 
     </div>
     
