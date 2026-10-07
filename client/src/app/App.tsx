@@ -13,6 +13,7 @@ import CollectionMeta from "../shared/ui/CollectionMeta/CollectionMeta"
 import RatingDistributionRow from "../shared/ui/RatingDistribution/RatingDistributionRow"
 import RatingDistribution from "../shared/ui/RatingDistribution/RatingDistribution"
 import CommunityRating from "../shared/ui/CommunityRating/CommunityRating"
+import Header from "../shared/ui/Header/Header"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -131,7 +132,7 @@ function App() {
     </div>
 
 
-
+      <Header/>
 
     </div>
     
