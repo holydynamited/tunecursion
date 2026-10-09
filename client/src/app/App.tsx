@@ -15,6 +15,7 @@ import RatingDistribution from "../shared/ui/RatingDistribution/RatingDistributi
 import CommunityRating from "../shared/ui/CommunityRating/CommunityRating"
 import Header from "../shared/ui/Header/Header"
 import RankedMediaRow from "../shared/ui/RankedMediaRow/RankedMediaRow"
+import ActivityRow from "../shared/ui/ActivityRow/ActivityRow"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -185,6 +186,10 @@ function App() {
     score={8.1}
     change={4}
   />
+
+    <ActivityRow userName="rock057" actionText="Bloood" time="15:63"/>
+    <ActivityRow userName="rock057" actionText="Bloood" time="15:63" profilePhoto={wlr}/>
+
 </div>
 
     </div>
