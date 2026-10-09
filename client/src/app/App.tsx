@@ -16,6 +16,7 @@ import CommunityRating from "../shared/ui/CommunityRating/CommunityRating"
 import Header from "../shared/ui/Header/Header"
 import RankedMediaRow from "../shared/ui/RankedMediaRow/RankedMediaRow"
 import ActivityRow from "../shared/ui/ActivityRow/ActivityRow"
+import PerceptionPath from "../shared/ui/PerceptionPath/PerceptionPath"
 
 
 import wlr from '../assets/wlr.jpg'
@@ -189,6 +190,14 @@ function App() {
 
     <ActivityRow userName="rock057" actionText="Bloood" time="15:63"/>
     <ActivityRow userName="rock057" actionText="Bloood" time="15:63" profilePhoto={wlr}/>
+
+       <PerceptionPath
+        index={1}
+        title="DARK & IMMERSIVE"
+        description="Records that reward headphones and disappear into their own weather."
+        tags={["immersive", "nocturnal", "dense"]}
+        releaseCount={164}
+      />
 
 </div>
 
