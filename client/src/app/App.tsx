@@ -18,6 +18,7 @@ import RankedMediaRow from "../shared/ui/RankedMediaRow/RankedMediaRow"
 import ActivityRow from "../shared/ui/ActivityRow/ActivityRow"
 import PerceptionPath from "../shared/ui/PerceptionPath/PerceptionPath"
 import MediaRow from "../shared/ui/MediaRow/MediaRow"
+import TasteMetric from "../shared/ui/TasteMetric/TasteMetric"
 
 
 
@@ -210,6 +211,10 @@ function App() {
         releasesCount={mediaRow.length}
       />
     </div>
+
+    <TasteMetric averageRating={3.7} />
+
+ <TasteMetric averageRating={3.7} size="sm" />
 
       
 
