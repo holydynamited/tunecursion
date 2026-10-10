@@ -34,9 +34,9 @@ export default function PerceptionPath({index,title, description, tags, releaseC
     {releaseCount} releases
   </div>
 
-  <div className="w-80 font-body text-tc-14 font-medium leading-tc-20 text-accent">
+  <button className="font-body text-tc-14 font-medium leading-tc-20 text-accent cursor-pointer">
     Explore →
-  </div>
+  </button>
 </div>
     )
 }

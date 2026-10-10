@@ -17,12 +17,15 @@ import Header from "../shared/ui/Header/Header"
 import RankedMediaRow from "../shared/ui/RankedMediaRow/RankedMediaRow"
 import ActivityRow from "../shared/ui/ActivityRow/ActivityRow"
 import PerceptionPath from "../shared/ui/PerceptionPath/PerceptionPath"
+import MediaRow from "../shared/ui/MediaRow/MediaRow"
+
 
 
 import wlr from '../assets/wlr.jpg'
 import ProfileFavorite from "../shared/ui/ProfileFavorite/ProfileFavorite"
 
 import { mockRatings } from "../shared/lib/mocks/mockRatings"
+import { mediaRow } from "../shared/lib/mocks/mediaRow"
 
 
 function App() {
@@ -86,6 +89,7 @@ function App() {
       <ProfileFavorite type='album' photoSrc={wlr} name="Whole Lotta Red" rating={4.3} year="2020"  />
       <ProfileFavorite type='track' photoSrc={wlr} name="Vamp Anthem" rating={4.3} year="2020"   />
       <ProfileFavorite type='artist' photoSrc={wlr} name="Playboi Carti" rating={4.3}   />
+     
 
 
       <div className="flex  justify-center mt-8" >
@@ -198,6 +202,16 @@ function App() {
         tags={["immersive", "nocturnal", "dense"]}
         releaseCount={164}
       />
+
+      <div className="p-tc-24">
+      <MediaRow
+        items={mediaRow}
+        title="Popular releases"
+        releasesCount={mediaRow.length}
+      />
+    </div>
+
+      
 
 </div>
 
