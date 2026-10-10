@@ -20,6 +20,7 @@ import PerceptionPath from "../shared/ui/PerceptionPath/PerceptionPath"
 import MediaRow from "../shared/ui/MediaRow/MediaRow"
 import TasteMetric from "../shared/ui/TasteMetric/TasteMetric"
 import MetaItem from "../shared/ui/MetaItem/MetaItem"
+import TagBreakdownItem from "../shared/ui/TagBreakdownItem/TagBreakdownItem"
 
 
 
@@ -223,6 +224,11 @@ function App() {
 <MetaItem label="ORIGIN" value="London, United Kingdom" />
  </div>
 
+    <div className="flex flex-row gap-tc-16 mt-10" >
+  <TagBreakdownItem label="Rage" value={24} />
+  <TagBreakdownItem label="Dark" value={68} />
+  <TagBreakdownItem label="Experimental" value={41} />
+</div>
  
 
       
