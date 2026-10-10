@@ -19,6 +19,7 @@ import ActivityRow from "../shared/ui/ActivityRow/ActivityRow"
 import PerceptionPath from "../shared/ui/PerceptionPath/PerceptionPath"
 import MediaRow from "../shared/ui/MediaRow/MediaRow"
 import TasteMetric from "../shared/ui/TasteMetric/TasteMetric"
+import MetaItem from "../shared/ui/MetaItem/MetaItem"
 
 
 
@@ -215,6 +216,14 @@ function App() {
     <TasteMetric averageRating={3.7} />
 
  <TasteMetric averageRating={3.7} size="sm" />
+ <div className="flex gap-10 mt-10">
+  <MetaItem label="ALSO KNOWN AS" value="KV / Veil" />
+<MetaItem label="LABEL" value="Null Wave Records" />
+<MetaItem label="ACTIVE" value="2018 — present" />
+<MetaItem label="ORIGIN" value="London, United Kingdom" />
+ </div>
+
+ 
 
       
 
