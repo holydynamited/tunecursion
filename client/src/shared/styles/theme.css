@@ -119,6 +119,16 @@
 --text-tc-32: var(--tc-font-size-32);
 --text-tc-48: var(--tc-font-size-48);
 --text-tc-56: var(--tc-font-size-56);
+
+  /* Line heights */
+--leading-tc-16: var(--tc-line-16);
+--leading-tc-20: var(--tc-line-20);
+--leading-tc-24: var(--tc-line-24);
+--leading-tc-28: var(--tc-line-28);
+--leading-tc-32: var(--tc-line-32);
+--leading-tc-40: var(--tc-line-40);
+--leading-tc-52: var(--tc-line-52);
+--leading-tc-60: var(--tc-line-60);
 }
 /* ========================================
    SPACING

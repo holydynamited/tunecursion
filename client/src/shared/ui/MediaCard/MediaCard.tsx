@@ -61,7 +61,7 @@ return(
     focus-visible:outline-2
     focus-visible:outline-accent
   ">
-      <div className="h-[236px] w-[236px] bg-bg-muted relative mx-auto" >
+      <div className="h-[236px] w-[236px] bg-muted relative mx-auto" >
         <img draggable={false} className="pointer-events-none select-none object-cover" src={photoSrc} />
       </div>
 

@@ -4,7 +4,7 @@ type Props = {
   variant?: 'default' | 'community'
 }
 
-export default function RatingDistributionRow({
+export default function CommunityRatingRow({
   label,
   value,
   variant = 'default',

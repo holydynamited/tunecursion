@@ -23,7 +23,7 @@ export default function SectionHeader({title,description,action}:Props){
                 {title}
             </p>
 
-            <p className="text-accent size-tc-14 ">
+            <p className="text-accent text-tc-14 ">
                 {action}
             </p>
             
@@ -31,7 +31,7 @@ export default function SectionHeader({title,description,action}:Props){
 
                 <p className="
                 text-text-secondary 
-                text-text-body
+                font-body
                 text-tc-16
                 leading-tc-24
                 tracking-normal

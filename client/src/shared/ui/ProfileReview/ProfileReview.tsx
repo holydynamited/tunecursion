@@ -50,7 +50,7 @@ export default function ProfileReview(
     src={photoSrc}
     alt=""
     draggable={false}
-    className="h-[112px] w-[112px] shrink-0 object-cover pointer-events-none select-none object-cover"
+    className="h-[112px] w-[112px] shrink-0 object-cover pointer-events-none select-none"
   />
 
   <div className="inline-flex min-w-0 flex-1 flex-col items-start gap-tc-8 overflow-hidden ">

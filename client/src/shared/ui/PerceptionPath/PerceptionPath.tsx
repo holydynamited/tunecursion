@@ -13,7 +13,7 @@ type Props ={
 export default function PerceptionPath({index,title, description, tags, releaseCount}:Props){
 
     return(
-        <div className="inline-flex w-96 flex-col items-start gap-tc-16 pr-tc-28">
+        <div className="inline-flex w-96 flex-col items-start gap-tc-16 pr-7">
   <div className="w-80 font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
     {String(index).padStart(2, '0')} / {title}
   </div>

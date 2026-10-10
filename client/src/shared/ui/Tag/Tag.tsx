@@ -23,7 +23,7 @@ export default function Tag(props:Props){
     inline-flex items-center
     px-tc-12 py-tc-8 bg-muted 
     rounded-sm font-body 
-    text-size-14 text-text-secondary
+    text-tc-14 text-text-secondary
 
     `}>
         <span>
@@ -41,7 +41,7 @@ export default function Tag(props:Props){
                 inline-flex items-center
                 px-tc-12 py-tc-8 
                 rounded-sm font-body 
-                text-size-14
+                text-tc-14
     
                 ${disabled
                 ? disabledStyles
