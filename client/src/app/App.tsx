@@ -1,11 +1,11 @@
 
-import Playground from "./Playground"
+import Home from "../pages/Home/Home"
 
 function App() {
  
 
   return(
-    <Playground/>
+    <Home/>
   )
 }
 
