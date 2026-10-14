@@ -1,4 +1,4 @@
-import CollectionCard from "../CollectionCard/CollectionCard"
+import CollectionCard from "../../../shared/ui/CollectionCard/CollectionCard"
 
 import wlr from '../../../assets/wlr.jpg'
 
