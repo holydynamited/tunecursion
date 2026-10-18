@@ -1,10 +1,12 @@
 import React from 'react'
 
+import ArtworkGlow from '../../../shared/ui/ArtworkGlow/ArtworkGlow'
+
 const Hero = () => {
   return (
 <div className="relative h-[680px] w-[1440px] overflow-hidden bg-canvas">
   <div className="absolute left-[480px] top-[-430px] size-[760px] rounded-full bg-artwork-nocturne-rust opacity-70 blur-[90px]" />
-
+    <ArtworkGlow className="absolute left-[480px] top-[-430px]" />
   <div className="absolute left-[112px] top-[112px] inline-flex w-[520px] flex-col items-start gap-tc-20">
     <div className="w-[520px] font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-accent">
       TUNECURSION / DISCOVER

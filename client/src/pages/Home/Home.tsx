@@ -12,13 +12,20 @@ import Footer from "../../shared/ui/Footer/Footer"
 
 
 
+
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-canvas">
       <div className="absolute left-[-200px] top-[-180px] size-[760px] rounded-full bg-artwork-nocturne-rust opacity-70 blur-[90px]" />
+       
+        
         <Header/>
 
-        <section>
+        
+
+      
+
+        <section >
           <Hero/>
 
         </section>

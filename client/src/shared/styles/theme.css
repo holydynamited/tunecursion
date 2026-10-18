@@ -102,6 +102,7 @@
   --spacing-tc-48: var(--tc-space-48);
   --spacing-tc-64: var(--tc-space-64);
   --spacing-tc-80: var(--tc-space-80);
+  --color-artwork-nocturne-rust: var(--tc-rust);
 
   /* Radius */
   --radius-xs: var(--tc-radius-xs);
