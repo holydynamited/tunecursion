@@ -6,18 +6,18 @@ type BaseProps = {
 }
 
 type ArtistProps = BaseProps & {
-  type: 'artist'
+  type: "artist"
   artistName: string
 }
 
 type TrackProps = BaseProps & {
-  type: 'track'
+  type: "track"
   title: string
   artistName: string
 }
 
 type AlbumProps = BaseProps & {
-  type: 'album'
+  type: "album"
   title: string
   artistName: string
 }
@@ -33,28 +33,35 @@ export default function RankedMediaRow(props: Props) {
     change,
   } = props
 
-  const title = type === 'artist'
-    ? props.artistName
-    : props.title
+  const title =
+    type === "artist"
+      ? props.artistName
+      : props.title
 
-  const subtitle = type === 'artist'
-    ? 'Artist'
-    : `${props.artistName} · ${type[0].toUpperCase() + type.slice(1)}`
+  const subtitle =
+    type === "artist"
+      ? "Artist"
+      : `${props.artistName} · ${
+          type[0].toUpperCase() + type.slice(1)
+        }`
+
+  const rankDigits = String(rank).padStart(2, "0")
 
   return (
-    <div className="inline-flex w-[680px] items-center gap-tc-16 border-b border-border">
-      <div className="w-[48px] font-display text-tc-48 font-medium leading-tc-52 text-accent">
-        {String(rank).padStart(2, '0')}
+    <div className="inline-flex w-[680px] items-center justify-start gap-tc-16 border-b border-border">
+      <div className="w-12 font-display text-tc-48 font-medium leading-tc-52 text-accent">
+        <span className="block">{rankDigits[0]}</span>
+        <span className="block">{rankDigits[1]}</span>
       </div>
 
       <img
         src={imageSrc}
         alt=""
         draggable={false}
-        className="h-[52px] w-[52px] select-none object-cover"
+        className="size-12 select-none object-cover"
       />
 
-      <div className="inline-flex w-96 flex-col items-start gap-tc-2">
+      <div className="inline-flex w-96 flex-col items-start justify-start gap-tc-2">
         <div className="w-96 font-body text-tc-18 font-normal leading-tc-28 text-text-secondary">
           {title}
         </div>
