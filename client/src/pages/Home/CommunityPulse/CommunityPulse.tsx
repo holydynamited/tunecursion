@@ -1,5 +1,7 @@
 import ActivityRow from "../../../shared/ui/ActivityRow/ActivityRow"
 
+import DiscussionRow from "../../../shared/ui/DiscussionRow/DiscussionRow"
+
 const CommunityPulse = () => {
   return (
     <div className="inline-flex w-[1440px] flex-col items-start gap-9 bg-canvas px-28 py-tc-64">
@@ -58,100 +60,47 @@ const CommunityPulse = () => {
       />
     </div>
 
-    <div className="inline-flex w-96 flex-col items-start">
-      <div className="w-96 font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
-        POPULAR DISCUSSIONS
-      </div>
+    <div className="inline-flex flex-1 flex-col items-start">
+      <div className="inline-flex w-full flex-col items-start">
+  <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted mb-2">
+    POPULAR DISCUSSIONS
+  </div>
 
-      <div className="inline-flex h-16 self-stretch items-center justify-start gap-tc-24 border-t border-border px-tc-12">
-        <div className="flex-1 font-body text-tc-16 font-normal leading-tc-24 text-text-primary">
-          What makes a “grower” actually grow?
-        </div>
+  <DiscussionRow
+    title="What makes a “grower” actually grow?"
+    replies={148}
+    category="perception"
+    time="12m"
+  />
 
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          148 replies
-        </div>
+  <DiscussionRow
+    title="Albums whose sequencing changes the rating"
+    replies={93}
+    category="albums"
+    time="1h"
+  />
 
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          perception
-        </div>
+  <DiscussionRow
+    title="Is cohesion overrated?"
+    replies={76}
+    category="dimensions"
+    time="3h"
+  />
 
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
-          12m
-        </div>
-      </div>
+  <DiscussionRow
+    title="Best community lists for minimal wave"
+    replies={52}
+    category="lists"
+    time="6h"
+  />
 
-      <div className="inline-flex h-16 self-stretch items-center justify-start gap-tc-24 border-t border-border px-tc-12">
-        <div className="flex-1 font-body text-tc-16 font-normal leading-tc-24 text-text-primary">
-          Albums whose sequencing changes the rating
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          93 replies
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          albums
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
-          1h
-        </div>
-      </div>
-
-      <div className="inline-flex h-16 self-stretch items-center justify-start gap-tc-24 border-t border-border px-tc-12">
-        <div className="flex-1 font-body text-tc-16 font-normal leading-tc-24 text-text-primary">
-          Is cohesion overrated?
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          76 replies
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          dimensions
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
-          3h
-        </div>
-      </div>
-
-      <div className="inline-flex h-16 self-stretch items-center justify-start gap-tc-24 border-t border-border px-tc-12">
-        <div className="flex-1 font-body text-tc-16 font-normal leading-tc-24 text-text-primary">
-          Best community lists for minimal wave
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          52 replies
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          lists
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
-          6h
-        </div>
-      </div>
-
-      <div className="inline-flex h-16 self-stretch items-center justify-start gap-tc-24 border-t border-border px-tc-12">
-        <div className="flex-1 font-body text-tc-16 font-normal leading-tc-24 text-text-primary">
-          The case for rating tracks separately
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          39 replies
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
-          product
-        </div>
-
-        <div className="font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
-          9h
-        </div>
-      </div>
+  <DiscussionRow
+    title="The case for rating tracks separately"
+    replies={39}
+    category="product"
+    time="9h"
+  />
+</div>
     </div>
   </div>
 </div>

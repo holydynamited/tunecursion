@@ -7,7 +7,7 @@ import wlr from '../../../assets/wlr.jpg'
 
 const ForYou = () => {
   return (
-<div className="inline-flex w-[1440px] flex-col items-start gap-9 bg-canvas px-28 py-tc-64">
+<div className="inline-flex w-[1440px] flex-col items-start gap-9 bg-canvas px-28 py-tc-64 mb-tc-32">
   <div className="inline-flex w-[1216px] items-center justify-between">
     <div className="font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
       For You
