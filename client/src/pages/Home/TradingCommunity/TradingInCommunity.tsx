@@ -3,8 +3,8 @@ import wlr from '../../../assets/wlr.jpg'
 
 const TrandingInCommunity = () => {
   return (
-    <div className="inline-flex w-[1440px] flex-col items-start gap-9 bg-canvas px-28 py-tc-64">
-  <div className="inline-flex w-[1216px] items-center justify-between">
+    <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-9 bg-canvas px-tc-20 py-tc-48 sm:px-tc-32 lg:px-tc-64 xl:px-28 xl:py-tc-64">
+  <div className="flex w-full flex-col items-start gap-tc-8 sm:flex-row sm:items-center sm:justify-between">
     <div className="font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
       Trending in the Community
     </div>
@@ -14,35 +14,35 @@ const TrandingInCommunity = () => {
     </div>
   </div>
 
-  <div className="inline-flex w-[1216px] items-center justify-start gap-tc-48">
-    <div className="inline-flex w-[488px] flex-col items-start gap-tc-16">
+  <div className="grid w-full grid-cols-1 items-start gap-tc-48 lg:grid-cols-[minmax(0,488px)_minmax(0,680px)]">
+    <div className="flex w-full flex-col items-start gap-tc-16">
       <img
-        className="h-72 w-[488px] object-cover"
+        className="aspect-[488/278] w-full object-cover"
         src="https://placehold.co/488x278"
         alt=""
         draggable={false}
       />
 
-      <div className="w-[488px] font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-accent">
+      <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-accent">
         THE ALBUM MOVING UP WITHOUT A VIRAL SINGLE
       </div>
 
-      <div className="w-[488px] font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
+      <div className="w-full font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
         Vast Interface
       </div>
 
-      <div className="w-[488px] font-body text-tc-16 font-normal leading-tc-24 text-text-secondary">
+      <div className="w-full font-body text-tc-16 font-normal leading-tc-24 text-text-secondary">
         Signal Arc · 8.4 community rating
       </div>
 
-      <div className="w-[488px] font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
+      <div className="w-full font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
         A patient rise driven by long reviews, late-night lists and word of
         mouth.
       </div>
     </div>
 
-    <div className="inline-flex w-[680px] flex-col items-start">
-      <div className="w-[680px] font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
+    <div className="flex min-w-0 w-full flex-col items-start">
+      <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
         THIS WEEK / COMMUNITY MOMENTUM
       </div>
 

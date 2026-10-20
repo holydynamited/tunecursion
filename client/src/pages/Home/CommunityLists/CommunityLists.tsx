@@ -4,8 +4,8 @@ import wlr from '../../../assets/wlr.jpg'
 
 const CommunityLists = () => {
   return (
-    <div className="inline-flex w-[1440px] flex-col items-start gap-9 bg-canvas px-28 py-tc-64">
-  <div className="inline-flex w-[1216px] items-center justify-between">
+    <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-9 bg-canvas px-tc-20 py-tc-48 sm:px-tc-32 lg:px-tc-64 xl:px-28 xl:py-tc-64">
+  <div className="flex w-full flex-col items-start gap-tc-8 sm:flex-row sm:items-center sm:justify-between">
     <div className="font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
       Community Lists & Collections
     </div>
@@ -15,11 +15,11 @@ const CommunityLists = () => {
     </div>
   </div>
 
-  <div className="w-[1216px] font-body text-tc-16 font-normal leading-tc-24 text-text-secondary">
+  <div className="w-full font-body text-tc-16 font-normal leading-tc-24 text-text-secondary">
     Curated arguments, scenes and listening paths—not automated playlists.
   </div>
 
-  <div className="inline-flex w-[1216px] items-center justify-start gap-tc-24">
+  <div className="grid w-full grid-cols-1 items-stretch gap-tc-24 md:grid-cols-2 lg:grid-cols-3">
     <CollectionCard
       mainImage={wlr}
       sideImageTop={wlr}

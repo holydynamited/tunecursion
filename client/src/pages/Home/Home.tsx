@@ -15,7 +15,7 @@ import Footer from "../../shared/ui/Footer/Footer"
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-canvas">
+    <main className="relative min-h-screen overflow-x-hidden bg-canvas">
      
        
         
@@ -56,7 +56,7 @@ export default function Home() {
           <ForYou/>
         </section>
 
-        <footer className="flex justify-center">
+        <footer className="flex w-full justify-center">
           <Footer/>
         </footer>
 

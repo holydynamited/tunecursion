@@ -4,8 +4,8 @@ import DiscussionRow from "../../../shared/ui/DiscussionRow/DiscussionRow"
 
 const CommunityPulse = () => {
   return (
-    <div className="inline-flex w-[1440px] flex-col items-start gap-9 bg-canvas px-28 py-tc-64">
-  <div className="inline-flex w-[1216px] items-center justify-between">
+    <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-9 bg-canvas px-tc-20 py-tc-48 sm:px-tc-32 lg:px-tc-64 xl:px-28 xl:py-tc-64">
+  <div className="flex w-full flex-col items-start gap-tc-8 sm:flex-row sm:items-center sm:justify-between">
     <div className="font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
       Community Pulse
     </div>
@@ -15,23 +15,23 @@ const CommunityPulse = () => {
     </div>
   </div>
 
-  <div className="inline-flex w-[1216px] items-center justify-start gap-tc-48">
-    <div className="inline-flex w-[744px] flex-col items-start gap-tc-24">
-      <div className="flex w-[744px] flex-col items-start gap-tc-16 bg-surface p-7">
-        <div className="w-[688px] font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-accent">
+  <div className="grid w-full grid-cols-1 items-start gap-tc-48 xl:grid-cols-[minmax(0,744px)_minmax(0,424px)]">
+    <div className="flex min-w-0 w-full flex-col items-start gap-tc-24">
+      <div className="flex w-full flex-col items-start gap-tc-16 bg-surface p-tc-20 sm:p-7">
+        <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-accent">
           REVIEW OF THE DAY
         </div>
 
-        <div className="w-[688px] font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
+        <div className="w-full font-display text-tc-24 font-bold leading-tc-32 text-text-primary sm:text-tc-32 sm:leading-tc-40">
           “The record’s real hook is the way it makes uncertainty feel architectural.”
         </div>
 
-        <div className="w-[688px] font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
+        <div className="w-full font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
           framebyframe on Nocturne Static · 9.1 · 312 helpful
         </div>
       </div>
 
-      <div className="w-[744px] font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
+      <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
         RECENT ACTIVITY
       </div>
 
@@ -60,8 +60,8 @@ const CommunityPulse = () => {
       />
     </div>
 
-    <div className="inline-flex flex-1 flex-col items-start">
-      <div className="inline-flex w-full flex-col items-start">
+    <div className="flex min-w-0 w-full flex-col items-start">
+      <div className="flex w-full flex-col items-start">
   <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted mb-2">
     POPULAR DISCUSSIONS
   </div>

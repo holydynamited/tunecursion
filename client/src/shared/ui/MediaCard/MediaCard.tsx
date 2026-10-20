@@ -12,7 +12,8 @@ if (type === 'artist') {
   return (
     <button className="
     inline-flex
-    w-[268px]
+    w-full
+    max-w-[268px]
     flex-col
     items-start
     gap-tc-8
@@ -25,8 +26,8 @@ if (type === 'artist') {
     focus-visible:outline-2
     focus-visible:outline-accent
   ">
-      <div className="h-[236px] w-[236px] bg-muted relative " >
-        <img draggable={false} className="pointer-events-none select-none object-cover" src={photoSrc} alt="" />
+      <div className="relative aspect-square w-full bg-muted" >
+        <img draggable={false} className="size-full pointer-events-none select-none object-cover" src={photoSrc} alt="" />
       </div>
 
        <div className="font-display text-tc-20 font-medium leading-tc-28 text-text-primary">
@@ -48,7 +49,8 @@ const {artistName} = props
 return(
     <button className="
     inline-flex
-    w-[268px]
+    w-full
+    max-w-[268px]
     flex-col
     items-start
     gap-tc-8
@@ -61,8 +63,8 @@ return(
     focus-visible:outline-2
     focus-visible:outline-accent
   ">
-      <div className="h-[236px] w-[236px] bg-muted relative mx-auto" >
-        <img draggable={false} className="pointer-events-none select-none object-cover" src={photoSrc} />
+      <div className="relative aspect-square w-full bg-muted" >
+        <img draggable={false} className="size-full pointer-events-none select-none object-cover" src={photoSrc} alt="" />
       </div>
 
        <div className="font-display text-tc-20 font-medium leading-tc-28 text-text-primary">

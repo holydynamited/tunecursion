@@ -16,25 +16,25 @@ export default function CollectionCard({
   author,
 }: Props) {
   return (
-    <div className="inline-flex w-96 flex-col items-start gap-[14px] bg-surface p-tc-20">
-      <div className="inline-flex w-80 items-center justify-start gap-[6px]">
+    <div className="flex w-full flex-col items-start gap-[14px] bg-surface p-tc-20 xl:max-w-96">
+      <div className="grid w-full max-w-80 grid-cols-[3fr_2fr] items-stretch gap-[6px]">
         <img
-          className="size-48 object-cover"
+          className="aspect-square h-full w-full object-cover"
           src={mainImage}
           alt=""
           draggable={false}
         />
 
-        <div className="inline-flex w-40 flex-col items-start gap-[6px]">
+        <div className="grid min-w-0 grid-rows-2 gap-[6px]">
           <img
-            className="h-24 w-40 object-cover"
+            className="h-full min-h-0 w-full object-cover"
             src={sideImageTop}
             alt=""
             draggable={false}
           />
 
           <img
-            className="h-24 w-40 object-cover"
+            className="h-full min-h-0 w-full object-cover"
             src={sideImageBottom}
             alt=""
             draggable={false}
@@ -42,15 +42,15 @@ export default function CollectionCard({
         </div>
       </div>
 
-      <div className="w-80 font-display text-tc-20 font-medium leading-tc-28 text-text-primary">
+      <div className="w-full max-w-80 font-display text-tc-20 font-medium leading-tc-28 text-text-primary">
         {title}
       </div>
 
-      <div className="w-80 font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
+      <div className="w-full max-w-80 font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
         {releaseCount} releases · by {author}
       </div>
 
-      <button className="w-80 cursor-pointer text-left font-body text-tc-14 font-medium leading-tc-20 text-accent">
+      <button className="w-full max-w-80 cursor-pointer text-left font-body text-tc-14 font-medium leading-tc-20 text-accent">
         Open collection →
       </button>
     </div>

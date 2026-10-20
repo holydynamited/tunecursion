@@ -13,16 +13,16 @@ type Props ={
 export default function PerceptionPath({index,title, description, tags, releaseCount}:Props){
 
     return(
-        <div className="inline-flex w-96 flex-col items-start gap-tc-16 pr-7 p-6">
-  <div className="w-80 font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
+        <div className="flex h-full w-full flex-col items-start gap-tc-16 p-tc-24 xl:max-w-96 xl:pr-7">
+  <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
     {String(index).padStart(2, '0')} / {title}
   </div>
 
-  <div className="w-80 font-display text-tc-20 font-medium leading-tc-28 text-text-primary">
+  <div className="w-full font-display text-tc-20 font-medium leading-tc-28 text-text-primary">
     {description}
   </div>
 
-  <div className="inline-flex w-80 flex-wrap content-center items-center justify-start gap-tc-8">
+  <div className="flex w-full flex-wrap content-center items-center justify-start gap-tc-8">
     {tags.map(tag => (
   <Tag key={tag} >  {tag} </Tag>
     ))}
@@ -30,7 +30,7 @@ export default function PerceptionPath({index,title, description, tags, releaseC
      
   </div>
 
-  <div className="w-80 font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
+  <div className="w-full font-body text-tc-14 font-normal leading-tc-20 text-text-muted">
     {releaseCount} releases
   </div>
 

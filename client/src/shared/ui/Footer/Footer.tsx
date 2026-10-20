@@ -1,14 +1,14 @@
 export default function Footer() {
   return (
-    <footer className="inline-flex self-stretch flex-col items-start gap-tc-40 overflow-hidden bg-canvas p-tc-64">
-      <div className="inline-flex self-stretch items-start justify-between overflow-hidden">
+    <footer className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-tc-40 overflow-hidden bg-canvas px-tc-20 py-tc-48 sm:px-tc-32 lg:px-tc-64">
+      <div className="grid w-full grid-cols-1 items-start gap-tc-40 lg:grid-cols-[minmax(0,288px)_1fr] xl:grid-cols-[288px_1fr_256px] xl:justify-between">
 
-        <div className="inline-flex w-72 flex-col items-start gap-tc-16 overflow-hidden">
+        <div className="flex w-full max-w-72 flex-col items-start gap-tc-16 overflow-hidden">
           <div className="font-display text-tc-32 font-bold leading-tc-40 text-text-primary">
             TUNECURSION
           </div>
 
-          <div className="w-72 font-body text-tc-18 font-normal leading-tc-28 text-text-secondary">
+          <div className="w-full font-body text-tc-18 font-normal leading-tc-28 text-text-secondary">
             Music goes deeper when we describe it together.
           </div>
 
@@ -17,8 +17,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-start justify-start gap-tc-40 overflow-hidden">
-          <div className="inline-flex w-44 flex-col items-start gap-tc-12 overflow-hidden">
+        <div className="grid w-full grid-cols-2 items-start gap-x-tc-32 gap-y-tc-40 overflow-hidden sm:grid-cols-3 xl:justify-self-center">
+          <div className="flex w-full flex-col items-start gap-tc-12 overflow-hidden sm:max-w-44">
             <div className="font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
               EXPLORE
             </div>
@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="inline-flex w-44 flex-col items-start gap-tc-12 overflow-hidden">
+          <div className="flex w-full flex-col items-start gap-tc-12 overflow-hidden sm:max-w-44">
             <div className="font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
               COMMUNITY
             </div>
@@ -62,7 +62,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="inline-flex w-44 flex-col items-start gap-tc-12 overflow-hidden">
+          <div className="flex w-full flex-col items-start gap-tc-12 overflow-hidden sm:max-w-44">
             <div className="font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
               ABOUT
             </div>
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="inline-flex w-64 flex-col items-start gap-tc-16 overflow-hidden">
+        <div className="flex w-full max-w-64 flex-col items-start gap-tc-16 overflow-hidden lg:col-start-2 xl:col-start-auto">
           <div className="font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-text-muted">
             JOIN THE CONVERSATION
           </div>

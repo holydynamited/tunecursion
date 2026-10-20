@@ -12,14 +12,14 @@ export default function DiscussionRow({
   time,
 }: Props) {
   return (
-    <div className="flex w-full items-center justify-between gap-tc-24 border-t border-border py-tc-16">
+    <div className="flex w-full flex-col items-start justify-between gap-tc-8 border-t border-border py-tc-16 sm:flex-row sm:items-center sm:gap-tc-24">
       <div className="min-w-0 flex-1">
         <div className="font-body text-tc-16 font-normal leading-tc-24 text-text-primary">
           {title}
         </div>
       </div>
 
-      <div className="flex shrink-0 items-center gap-tc-20">
+      <div className="flex max-w-full flex-wrap items-center gap-x-tc-20 gap-y-tc-4 sm:shrink-0">
         <div className="whitespace-nowrap font-body text-tc-14 font-normal leading-tc-20 text-text-secondary">
           {replies} replies
         </div>
