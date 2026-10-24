@@ -72,6 +72,9 @@
   --color-elevated: var(--tc-color-bg-elevated);
   --color-muted: var(--tc-color-bg-muted);
 
+  --color-artwork-nocturne-rust: var(--tc-rust);
+ --color-artwork-nocturne-concrete: var(--tc-concrete);
+
   --color-text-primary: var(--tc-color-text-primary);
   --color-text-secondary: var(--tc-color-text-secondary);
   --color-text-muted: var(--tc-color-text-muted);

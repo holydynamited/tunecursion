@@ -5,8 +5,11 @@ import ArtworkGlow from '../../../shared/ui/ArtworkGlow/ArtworkGlow'
 const Hero = () => {
   return (
 <div className="relative mx-auto flex w-full max-w-[1440px] flex-col gap-tc-40 overflow-hidden bg-canvas px-tc-20 py-tc-64 sm:px-tc-32 lg:grid lg:grid-cols-2 lg:items-start lg:gap-tc-48 xl:block xl:h-[680px] xl:px-0 xl:py-0">
-  <div className="absolute left-1/2 top-[-240px] size-[520px] -translate-x-1/2 rounded-full bg-artwork-nocturne-rust opacity-70 blur-[90px] xl:left-[480px] xl:top-[-430px] xl:size-[760px] xl:translate-x-0" />
-    <ArtworkGlow className="absolute left-1/2 top-[-240px] size-[520px] -translate-x-1/2 xl:left-[480px] xl:top-[-430px] xl:size-[760px] xl:translate-x-0" />
+  
+   <ArtworkGlow
+  variant="single"
+  className="left-[480px] top-[-430px]"
+/>
   <div className="relative z-10 flex w-full max-w-[520px] flex-col items-start gap-tc-20 xl:absolute xl:left-[112px] xl:top-[112px]">
     <div className="w-full font-body text-tc-12 font-medium leading-tc-16 tracking-widest text-accent">
       TUNECURSION / DISCOVER
