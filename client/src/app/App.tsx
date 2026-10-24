@@ -1,5 +1,6 @@
 
-import Home from "../pages/Home/Home"
+import AlbumPage from "../pages/Album/AlbumPage"
+
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return(
 
     <>
-    <Home/>
+    <AlbumPage/>
 
     </>
     
