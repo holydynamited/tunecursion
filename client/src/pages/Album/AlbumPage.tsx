@@ -1,28 +1,21 @@
-import Header from "../../shared/ui/Header/Header"
+import AlbumDescription from "./AlbumDescription/AlbumDescription"
 import AlbumHero from "./AlbumHero/AlbumHero"
+import CommunityPerception from "./CommunityPerception/CommunityPerception"
 
+export default function AlbumPage() {
+  return (
+    <>
+      <section>
+        <AlbumHero />
+      </section>
 
-export default function AlbumPage(){
+      <section>
+        <AlbumDescription/>
+      </section>
 
-    return (
-        <main className="relative min-h-screen overflow-x-hidden bg-canvas">
-     
-       
-        
-        <Header/>
-
-        <section>
-            <AlbumHero/>
-        </section>
-
-        
-
-      
-
-        
-
-        
-      
-    </main>
-    )
+      <section>
+        <CommunityPerception/>
+      </section>
+    </>
+  )
 }
