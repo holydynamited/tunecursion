@@ -5,6 +5,7 @@ import CommunityPerception from "./CommunityPerception/CommunityPerception"
 import RelatedAlbums from "./RelatedAlbums/RelatedAlbum"
 import TagBreakdown from "./TagBreakdown/TagBreakdown"
 import TrackList from "./TrackList/Tracklist"
+import Review from "./Reviews/Reviews"
 
 export default function AlbumPage() {
   return (
@@ -31,6 +32,10 @@ export default function AlbumPage() {
 
       <section>
         <RelatedAlbums/>
+      </section>
+
+      <section>
+        <Review/>
       </section>
     </>
   )
