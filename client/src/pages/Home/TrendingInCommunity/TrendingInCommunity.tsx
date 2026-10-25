@@ -1,7 +1,7 @@
 import RankedMediaRow from "../../../shared/ui/RankedMediaRow/RankedMediaRow"
 import wlr from '../../../assets/wlr.jpg'
 
-const TrandingInCommunity = () => {
+const TrendingInCommunity = () => {
   return (
     <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-9 bg-canvas px-tc-20 py-tc-48 sm:px-tc-32 lg:px-tc-64 xl:px-28 xl:py-tc-64">
   <div className="flex w-full flex-col items-start gap-tc-8 sm:flex-row sm:items-center sm:justify-between">
@@ -111,4 +111,4 @@ const TrandingInCommunity = () => {
   )
 }
 
-export default TrandingInCommunity
+export default TrendingInCommunity

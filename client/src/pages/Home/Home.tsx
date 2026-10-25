@@ -1,5 +1,5 @@
 import Hero from "./Hero/Hero"
-import TrandingInCommunity from "./TradingCommunity/TradingInCommunity"
+import TrandingInCommunity from "./TrendingInCommunity/TrendingInCommunity"
 import HighlyRated from "./HighlyRated/HighlyRated"
 import ExploreByPerception from "./ExploreByPerception/ExploreByPerception"
 import CommunityPulse from "./CommunityPulse/CommunityPulse"
